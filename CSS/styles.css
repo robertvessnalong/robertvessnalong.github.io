@@ -17,7 +17,7 @@ body {
   font-size: 1.2rem;
   font-family: "Poppins", sans-serif;
   height: 100%;
-  overflow: auto;
+  overflow: hidden;
 }
 
 .main-header {
@@ -34,7 +34,7 @@ body {
 
 .main-container {
   width: 100vw;
-  height: 100vh;
+  height: calc(100% - 100px);
   background-color: #3f3d56;
   background-image: url(../img/DesktopStarBackground.png);
   background-position: center center;
@@ -47,6 +47,7 @@ body {
   align-items: center;
   text-align: center;
   z-index: -1000;
+  overflow: auto;
 }
 
 .headline {
