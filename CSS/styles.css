@@ -23,7 +23,6 @@ body {
   position: absolute;
   right: 0;
   top: 2%;
-  overflow: auto;
 }
 
 .main-nav a {
@@ -75,7 +74,7 @@ body {
   border: none;
   border-radius: 10px;
   font-size: 1em;
-  background-color: rgb(239, 239, 239);
+  background-color:(rgb(239, 239, 239)
 }
 
 .main-btn:hover {
@@ -88,7 +87,6 @@ body {
 .svg-bottom {
   width: 100%;
   display: flex;
-  overflow: auto;
 }
 
 .svg-bottom svg {
