@@ -23,6 +23,7 @@ body {
   position: absolute;
   right: 0;
   top: 2%;
+  overflow: auto;
 }
 
 .main-nav a {
