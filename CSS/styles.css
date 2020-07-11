@@ -75,6 +75,7 @@ body {
   border: none;
   border-radius: 10px;
   font-size: 1em;
+  background-color: rgb(239, 239, 239);
 }
 
 .main-btn:hover {
