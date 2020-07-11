@@ -87,6 +87,7 @@ body {
 .svg-bottom {
   width: 100%;
   display: flex;
+  overflow: auto;
 }
 
 .svg-bottom svg {
