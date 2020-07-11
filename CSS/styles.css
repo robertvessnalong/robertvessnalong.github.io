@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
+
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1.2rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.main-header {
+  position: absolute;
+  right: 0;
+  top: 2%;
+}
+
+.main-nav a {
+  padding: 25px;
+  text-decoration: none;
+  color: white;
+}
+
+.main-container {
+  width: 100vw;
+  height: 100vh;
+  background-color: #3f3d56;
+  background-image: url(../img/DesktopStarBackground.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: -1000;
+}
+
+.headline {
+  margin-bottom: auto;
+  margin-top: auto;
+  transform: translateY(20%);
+}
+
+.headline-name,
+.headline-text {
+  padding: 20px 0px;
+  color: white;
+}
+
+.headline-name {
+  font-size: 2em;
+}
+
+.headline-text {
+  font-size: 1.8em;
+}
+
+.main-btn {
+  padding: 15px 25px;
+  margin: 20px 0px;
+  border: none;
+  border-radius: 10px;
+  font-size: 1em;
+}
+
+.main-btn:hover {
+  background-color: #f85959;
+  transition-duration: 0.5s;
+  transition-delay: 50ms;
+  color: white;
+}
+
+.svg-bottom {
+  width: 100%;
+  display: flex;
+}
+
+.svg-bottom svg {
+  width: 100%;
+}
+
+.tablet,
+.desktop {
+  display: none;
+  transition: all 250ms ease-in-out;
+  width: 100%;
+}
+
+.projects {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  display: none;
+  background-color: white;
+}
+
+@media (min-width: 768px) {
+  .mobile {
+    display: none;
+  }
+
+  .tablet {
+    display: flex;
+  }
+}
+
+@media (min-width: 1024px) {
+  .tablet {
+    display: none;
+  }
+
+  .desktop {
+    display: flex;
+    padding-top: 90px;
+  }
+}
