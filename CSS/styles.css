@@ -34,7 +34,7 @@ body {
 
 .main-container {
   width: 100vw;
-  height: calc(100% - 100px);
+  height: 100vh;
   background-color: #3f3d56;
   background-image: url(../img/DesktopStarBackground.png);
   background-position: center center;
@@ -111,7 +111,6 @@ body {
   z-index: 1000;
   display: none;
   background-color: white;
-  overflow: hidden;
 }
 
 @media (min-width: 768px) {
