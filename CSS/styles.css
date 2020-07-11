@@ -47,7 +47,7 @@ body {
   align-items: center;
   text-align: center;
   z-index: -1000;
-  overflow: hidden;
+  overflow: auto;
 }
 
 .headline {
@@ -111,6 +111,7 @@ body {
   z-index: 1000;
   display: none;
   background-color: white;
+  overflow: auto;
 }
 
 @media (min-width: 768px) {
