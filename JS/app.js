@@ -1,9 +1,14 @@
-const projectBtn = document.getElementById("project-btn");
-const projectConainter = document.getElementById("project-container");
+/************************/
+/*       Variable       */
+/************************/
 
-projectBtn.addEventListener("click", (e) => {
-  const button = e.target.tagName;
-  if (button === "BUTTON") {
-    projectConainter.style.display = "block";
-  }
+const hamburgerMenu = document.querySelector("#hamburger-menu");
+const navMenu = document.querySelector("#nav-menu");
+
+/************************/
+/*     Event Handlers   */
+/************************/
+
+hamburgerMenu.addEventListener("click", () => {
+  navMenu.classList.toggle("open");
 });
