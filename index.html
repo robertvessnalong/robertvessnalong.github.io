@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!--Custom Stylesheets-->
+    <link rel="stylesheet" href="CSS/normalize.css" />
     <link rel="stylesheet" href="CSS/styles.css" />
 
     <!--Title-->
@@ -18,21 +19,23 @@
       <!-- Navigation Logo-->
       <nav class="main-nav">
         <div class="nav-header">
-          <h1>Robert</h1>
+          <h1><a href="#">Robert</a></h1>
         </div>
         <!-- Ending of Logo -->
         <!-- Navigation List -->
         <div id="nav-menu" class="nav-list">
           <ul>
-            <li><a class="nav-item" href="#">About</a></li>
-            <li><a class="nav-item" href="#">Portfolio</a></li>
-            <li><a class="nav-item" href="#">Contact</a></li>
+            <li><a class="nav-item" href="#about-section">About</a></li>
+            <li><a class="nav-item" href="#portfolio">Portfolio</a></li>
+            <li><a class="nav-item" href="#contact-section">Contact</a></li>
           </ul>
         </div>
         <!-- Ending of Nav List -->
         <!-- Mobile Menu -->
         <div id="hamburger-menu" class="mobile-menu">
-          <img src="img/icons8-menu.svg" alt="" />
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
         </div>
         <!-- Ending of Mobile Menu -->
       </nav>
@@ -52,7 +55,7 @@
           <li><a href="#portfolio">View My Work</a></li>
         </div>
       </section>
-      <section class="about">
+      <section id="about-section" class="about">
         <h2 class="section-heading">About</h2>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
@@ -68,7 +71,7 @@
       <section id="portfolio" class="portfolio">
         <h2 class="section-heading">Portfolio</h2>
       </section>
-      <section class="contact">
+      <section id="contact-section" class="contact">
         <h2 class="section-heading">Contact</h2>
         <form action="" method="POST" class="contact-form">
           <div class="name-form">
@@ -98,7 +101,7 @@
               name="message"
               placeholder="Message"
               rows="5"
-              cols="33"
+              cols=""
             ></textarea>
           </div>
           <div class="form-submit">
