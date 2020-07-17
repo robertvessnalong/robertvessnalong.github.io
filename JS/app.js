@@ -5,15 +5,16 @@
 const hamburgerMenu = document.querySelector("#hamburger-menu");
 const navMenu = document.querySelector("#nav-menu");
 const navLinks = document.querySelectorAll(".nav-item");
-const header = document.querySelector("header");
 
 /************************/
 /*     Event Handlers   */
 /************************/
 
 hamburgerMenu.addEventListener("click", () => {
+  //Toggle Open Class for Hamburger Menu
   navMenu.classList.toggle("open");
 
+  // Animating Links
   navLinks.forEach((link, index) => {
     if (link.style.animation) {
       link.style.animation = "";
@@ -21,8 +22,6 @@ hamburgerMenu.addEventListener("click", () => {
       link.style.animation = `menuitems 0.5s ease forwards ${index / 5 + 0.5}s`;
     }
   });
-});
-
-header.addEventListener("scroll", () => {
-  header.style.display = "none";
+  //Rotate Hamburger to 'X'
+  hamburgerMenu.classList.toggle("toggle");
 });

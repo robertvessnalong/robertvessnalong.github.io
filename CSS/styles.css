@@ -82,6 +82,8 @@ a {
   margin: 5px;
   border-radius: 10px;
   cursor: pointer;
+  /* Burger Menu Transition to 'X' */
+  transition: all 0.3s ease;
 }
 
 .nav-list {
@@ -119,6 +121,18 @@ a {
 
 .open {
   transform: translateX(0%);
+}
+
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2 {
+  opacity: 0;
+}
+
+.toggle .line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
 }
 
 /************************/
@@ -180,6 +194,7 @@ a {
   text-align: center;
   border: 1px solid gray;
   padding: 1em;
+  text-transform: uppercase;
 }
 
 /************************/
