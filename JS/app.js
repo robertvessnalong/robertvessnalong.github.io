@@ -7,6 +7,8 @@ const navMenu = document.querySelector("#nav-menu");
 const navLinks = document.querySelectorAll(".nav-item");
 const screen = window.matchMedia("(min-width: 1024px)");
 const viewWorkBtn = document.querySelector("#viewwork");
+const headlineContainer = document.querySelector("#headline-container");
+const portfolio = document.querySelector("#portfolio");
 
 /************************/
 /*     Event Handlers   */
@@ -37,8 +39,16 @@ hamburgerMenu.addEventListener("click", () => {
 //Media Query Function
 viewWorkBtn.addEventListener("click", () => {
   if (screen.matches) {
-    viewWorkBtn.style.opacity = "0";
-  } else {
-    viewWorkBtn.style.opacity = "";
+    headlineContainer.classList.add("remove");
+    setTimeout(() => {
+      portfolio.classList.add("add");
+    }, 3000);
+  }
+});
+
+window.addEventListener("resize", function () {
+  if (window.innerWidth <= 1024) {
+    headlineContainer.classList.remove("remove");
+    portfolio.classList.remove("add");
   }
 });
