@@ -5,6 +5,8 @@
 const hamburgerMenu = document.querySelector("#hamburger-menu");
 const navMenu = document.querySelector("#nav-menu");
 const navLinks = document.querySelectorAll(".nav-item");
+const screen = window.matchMedia("(min-width: 1024px)");
+const viewWorkBtn = document.querySelector("#viewwork");
 
 /************************/
 /*     Event Handlers   */
@@ -30,4 +32,13 @@ hamburgerMenu.addEventListener("click", () => {
   });
   //Rotate Hamburger to 'X'
   hamburgerMenu.classList.toggle("toggle");
+});
+
+//Media Query Function
+viewWorkBtn.addEventListener("click", () => {
+  if (screen.matches) {
+    viewWorkBtn.style.opacity = "0";
+  } else {
+    viewWorkBtn.style.opacity = "";
+  }
 });
