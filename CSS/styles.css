@@ -18,7 +18,7 @@ body {
   font-family: Oswald, sans-serif;
   height: 100%;
   overflow-x: hidden;
-  background-color: rgb(240, 240, 240);
+  /* background-color: rgb(240, 240, 240); */
 }
 
 li {
@@ -49,9 +49,7 @@ hr {
 .about,
 .portfolio,
 .contact {
-  background-color: white;
   margin: 1em;
-  border-radius: 10px;
 }
 
 /************************/
@@ -164,6 +162,12 @@ hr {
   position: relative;
   padding-top: 8em;
   padding-bottom: 3em;
+  -webkit-transform: skewY(-2deg);
+  -moz-transform: skewY(-2deg);
+  -ms-transform: skewY(-2deg);
+  -o-transform: skewY(-2deg);
+  transform: skewY(-2deg);
+  overflow: hidden;
 }
 
 .headline:before {
@@ -181,6 +185,11 @@ hr {
   position: relative;
   width: 90%;
   margin: auto;
+  -webkit-transform: skewY(2deg);
+  -moz-transform: skewY(2deg);
+  -ms-transform: skewY(2deg);
+  -o-transform: skewY(2deg);
+  transform: skewY(2deg);
 }
 
 .headline h2,
@@ -237,6 +246,10 @@ hr {
 
 .name {
   font-weight: bolder;
+}
+
+.about {
+  margin-top: 2em;
 }
 
 /************************/
@@ -445,17 +458,32 @@ hr {
   .headline {
     grid-area: headline;
     z-index: 1;
+    -webkit-transform: skewY(0deg);
+    -moz-transform: skewY(0deg);
+    -ms-transform: skewY(0deg);
+    -o-transform: skewY(0deg);
+    transform: skewY(0deg);
+  }
+
+  .headline-text,
+  .portfolio-btn {
+    -webkit-transform: skewY(0deg);
+    -moz-transform: skewY(0deg);
+    -ms-transform: skewY(0deg);
+    -o-transform: skewY(0deg);
+    transform: skewY(0deg);
   }
 
   .about {
     grid-area: about;
+    margin-top: 1em;
   }
 
   .portfolio {
     position: absolute;
     background-color: white;
     width: 65%;
-    height: 96.3%;
+    height: 96.4%;
   }
 
   .contact {
