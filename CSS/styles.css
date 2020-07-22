@@ -52,6 +52,11 @@ hr {
   margin: 1em;
 }
 
+.main-container {
+  height: 100vh;
+  width: 100vw;
+}
+
 /************************/
 /*       Nav Bar        */
 /************************/
@@ -587,6 +592,7 @@ hr {
   }
 
   .headline {
+    height: 100vh;
     grid-area: headline;
     z-index: 1;
     -webkit-transform: skewY(0deg);
