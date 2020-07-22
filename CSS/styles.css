@@ -489,7 +489,6 @@ hr {
     display: grid;
     grid-template-columns: 1fr 1fr;
     flex-wrap: wrap;
-    grid-gap: 2em;
   }
 
   .project-two,
@@ -499,6 +498,25 @@ hr {
 
   .project-header p {
     margin: 0.5em;
+  }
+
+  .project-gif {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .project-gif img {
+    width: 80%;
+  }
+
+  .project-gif img {
+    width: 80%;
+    height: 250px;
+  }
+
+  .project-btn {
+    width: 80%;
   }
 
   /*******************************/
@@ -601,21 +619,6 @@ hr {
 
   .projects {
     grid-gap: 0.8em;
-  }
-
-  .project-gif {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .project-gif img {
-    width: 80%;
-    height: 200px;
-  }
-
-  .project-btn {
-    width: 80%;
   }
 
   .contact {
