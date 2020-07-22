@@ -42,7 +42,7 @@ viewWorkBtn.addEventListener("click", () => {
     headlineContainer.classList.add("remove");
     setTimeout(() => {
       portfolio.classList.add("add");
-    }, 3000);
+    }, 2000);
   }
 });
 
