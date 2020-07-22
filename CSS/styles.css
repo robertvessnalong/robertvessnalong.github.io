@@ -256,8 +256,101 @@ hr {
 /*      Portfolio       */
 /************************/
 
+/* Added for Larger Screen Devices */
 .add {
   z-index: 1000;
+}
+
+.projects {
+  margin-top: 2em;
+}
+
+.project-gif {
+  position: relative;
+}
+
+.project-gif img {
+  display: block;
+  width: 100%;
+  height: 250px;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+}
+
+.project-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 1em;
+  margin-bottom: 2em;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  margin-top: 0;
+}
+
+.project-header {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.project-header p,
+.project-btn a {
+  margin: 1em;
+}
+
+.html,
+.css,
+.javascript,
+.fetch,
+.project-btn a {
+  padding: 0.5em;
+  border-radius: 10%;
+  color: white;
+}
+
+.html {
+  background-color: #ff6d00;
+}
+
+.css {
+  background-color: #039be5;
+}
+
+.javascript {
+  background-color: #f2bf21;
+}
+
+.fetch {
+  background-color: #1ea49b;
+}
+
+.project-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1em;
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.8); /* Black see-through */
+  color: #f1f1f1;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s ease;
+  opacity: 0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.project-btn:hover {
+  opacity: 1;
 }
 
 /************************/
@@ -389,6 +482,26 @@ hr {
   }
 
   /*******************************/
+  /*          Portfolio          */
+  /*******************************/
+
+  .projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    flex-wrap: wrap;
+    grid-gap: 2em;
+  }
+
+  .project-two,
+  .project-four {
+    grid-column: 2 / 3;
+  }
+
+  .project-header p {
+    margin: 0.5em;
+  }
+
+  /*******************************/
   /*          Contact            */
   /*******************************/
 
@@ -484,6 +597,25 @@ hr {
     background-color: white;
     width: 65%;
     height: 96.4%;
+  }
+
+  .projects {
+    grid-gap: 0.8em;
+  }
+
+  .project-gif {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .project-gif img {
+    width: 80%;
+    height: 200px;
+  }
+
+  .project-btn {
+    width: 80%;
   }
 
   .contact {
