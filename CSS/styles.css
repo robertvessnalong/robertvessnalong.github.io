@@ -641,7 +641,7 @@ hr {
   /*******************************/
 
   .headline {
-    padding-bottom: 15em;
+    padding-bottom: 13em;
     grid-area: headline;
     z-index: 1;
     -webkit-transform: skewY(0deg);
