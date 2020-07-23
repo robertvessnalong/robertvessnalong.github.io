@@ -227,6 +227,10 @@ hr {
   animation: headlineDiv 2s ease-in-out;
 }
 
+.addHeadline {
+  animation: fadeinHeadline 2s ease-in-out;
+}
+
 /************************/
 /*        About         */
 /************************/
@@ -352,13 +356,39 @@ hr {
   opacity: 1;
 }
 
+.close-headline {
+  display: none;
+}
+
+.close-headline div {
+  width: 25px;
+  height: 3px;
+  background-color: rgba(0, 0, 0, 0.7);
+  margin: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.close-left {
+  transform: rotate(45deg) translateX(10px);
+  -webkit-transform: rotate(45deg) translateX(10px);
+  transform-origin: 30%;
+  -webkit-transform-origin: 30%;
+}
+
+.close-right {
+  transform: rotate(-45deg) translateY(10px);
+  -webkit-transform: rotate(-45deg) translateY(10px);
+  transform-origin: 22%;
+  -webkit-transform-origin: 22%;
+}
+
 /************************/
 /*       Contact        */
 /************************/
 
 .contact-btn-container {
   padding: 2em 0em;
-  text-align: center;
   font-weight: lighter;
 }
 
@@ -367,7 +397,7 @@ hr {
 }
 
 .contact-btn {
-  margin: 2em 0em;
+  margin-top: 2em;
   padding: 0.8em;
   color: white;
   background-color: #c94e4e;
@@ -376,19 +406,29 @@ hr {
   display: inline-block;
 }
 
-.social-media {
-  text-align: center;
-}
-
 .social-media p {
   font-size: 1.4em;
   font-weight: lighter;
-  padding-bottom: 1em;
 }
 
 .social-media a img {
   width: 50px;
   height: 50px;
+}
+
+.contact-btn-container,
+.social-media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2em;
 }
 
 /************************/
@@ -414,6 +454,17 @@ hr {
   100% {
     opacity: 0;
     transform: translateX(-100%);
+  }
+}
+
+@keyframes fadeinHeadline {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
   }
 }
 
@@ -575,6 +626,7 @@ hr {
     height: 100vh;
     display: grid;
     grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto;
     grid-template-areas:
       "headline about"
       "headline contact";
@@ -585,6 +637,7 @@ hr {
   }
 
   .headline {
+    padding-bottom: 15em;
     grid-area: headline;
     z-index: 1;
     -webkit-transform: skewY(0deg);
@@ -607,6 +660,10 @@ hr {
     grid-area: about;
   }
 
+  .close-headline {
+    display: block;
+  }
+
   .portfolio {
     margin-top: 4em;
     padding: 0;
@@ -617,10 +674,33 @@ hr {
     right: 0;
     background-color: white;
     width: 65%;
-    height: 80vh;
+  }
+
+  .projects {
+    margin-top: 0em;
+  }
+
+  .project-one,
+  .project-two,
+  .project-three,
+  .project-four {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .project-gif {
+    width: 80%;
+    margin: auto;
+  }
+
+  .project-info {
+    margin-bottom: 0em;
   }
 
   .contact {
     grid-area: contact;
+    padding-bottom: 5em;
   }
 }

@@ -9,6 +9,7 @@ const screen = window.matchMedia("(min-width: 1024px)");
 const viewWorkBtn = document.querySelector("#viewwork");
 const headlineContainer = document.querySelector("#headline-container");
 const portfolio = document.querySelector("#portfolio");
+const close = document.querySelector("#close");
 
 /************************/
 /*     Event Handlers   */
@@ -39,6 +40,7 @@ hamburgerMenu.addEventListener("click", () => {
 //Media Query Function
 viewWorkBtn.addEventListener("click", () => {
   if (screen.matches) {
+    headlineContainer.classList.remove("addHeadline");
     headlineContainer.classList.add("remove");
     setTimeout(() => {
       portfolio.classList.add("add");
@@ -46,9 +48,17 @@ viewWorkBtn.addEventListener("click", () => {
   }
 });
 
+//Will Check if min-width is 1024 to remove classes
 window.addEventListener("resize", function () {
   if (window.innerWidth <= 1024) {
     headlineContainer.classList.remove("remove");
     portfolio.classList.remove("add");
   }
+});
+
+//Close Headline
+close.addEventListener("click", () => {
+  headlineContainer.classList.remove("remove");
+  portfolio.classList.remove("add");
+  headlineContainer.classList.add("addHeadline");
 });
