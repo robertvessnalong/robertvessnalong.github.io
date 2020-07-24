@@ -416,7 +416,8 @@ hr {
   flex-direction: column;
 }
 
-.social-icons {
+.social-icons,
+.contact-btn {
   display: flex;
   justify-content: center;
   align-items: center;
