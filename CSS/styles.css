@@ -398,10 +398,6 @@ hr {
   display: inline-block;
 }
 
-.social-meda {
-  padding: 2em 0em;
-}
-
 .social-media p {
   font-size: 1.4em;
   font-weight: lighter;
@@ -649,7 +645,7 @@ hr {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-bottom: 13em;
+    padding-bottom: 15em;
     grid-area: headline;
     z-index: 1;
     -webkit-transform: skewY(0deg);
@@ -693,12 +689,18 @@ hr {
     bottom: 0;
     right: 0;
     background-color: white;
-    width: 65%;
+    width: 60%;
   }
 
   .projects {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, minmax(200px, 1fr));
+    grid-gap: 2em;
     margin-top: 0em;
+  }
+
+  .project-gif img,
+  .project-btn {
+    width: 100%;
   }
 
   .project-one,
