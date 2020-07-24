@@ -715,6 +715,10 @@ hr {
     margin-bottom: 0em;
   }
 
+  .project-four {
+    grid-column: 1 / 2;
+  }
+
   .project-btn {
     opacity: 0;
   }
