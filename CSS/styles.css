@@ -162,11 +162,6 @@ hr {
   position: relative;
   padding-top: 8em;
   padding-bottom: 3em;
-  -webkit-transform: skewY(-2deg);
-  -moz-transform: skewY(-2deg);
-  -ms-transform: skewY(-2deg);
-  -o-transform: skewY(-2deg);
-  transform: skewY(-2deg);
 }
 
 .headline:before {
@@ -184,11 +179,6 @@ hr {
   position: relative;
   width: 90%;
   margin: auto;
-  -webkit-transform: skewY(2deg);
-  -moz-transform: skewY(2deg);
-  -ms-transform: skewY(2deg);
-  -o-transform: skewY(2deg);
-  transform: skewY(2deg);
 }
 
 .headline h2,
